@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
+    'algoliasearch_django',
 
 
 ]
@@ -180,3 +181,11 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'accounts.user'
 
+
+
+ALGOLIA = {
+    'APPLICATION_ID': 'E9ZN0C1C6H',
+    'API_KEY': '76c3470c09e3088ca3edad21bec875b5'
+}
+
+AUTO_INDEXING:True
